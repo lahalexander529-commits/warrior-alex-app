@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warrior Alex Assets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0a0a0a;
+      font-family: 'Orbitron', sans-serif;
+      color: #0f0;
+      margin: 0;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .animated-title {
+      text-align: center;
+      font-size: 4em;
+      color: #00ff88;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 3px solid #00ff88;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #00ff88;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+         0 0 15px #00ff88,
+         0 0 30px #00ff88;
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+      0%   { transform: scale(1); box-shadow: 0 0 15px #00ff88; }
+      50%  { transform: scale(1.02); box-shadow: 0 0 30px #00ff88; }
+      100% { transform: scale(1); box-shadow: 0 0 15px #00ff88; }
+    }
+
+    @media (max-width: 480px) {
+      .animated-title {
+        font-size: 2.2em;
+        padding: 10px;
+        letter-spacing: 2px;
+        border-width: 2px;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+
+    .section {
+      background-color: #111;
+      border: 2px solid #0f0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 15px #0f0;
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #00ff88;
+      text-transform: uppercase;
+    }
+
+    .asset-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      background-color: #0f0;
+      color: #000;
+      text-align: center;
+      padding: 12px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #00ff88;
+      transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #00ff88;
+      box-shadow: 0 0 20px #00ff88;
+      transform: scale(1.05);
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+
+    .music-player {
+      background-color: #111;
+      border: 2px solid #00ff88;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 15px #00ff88;
+      text-align: center;
+    }
+
+    .music-player h2 {
+      color: #00ff88;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      color: #0f0;
+      font-size: 14px;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Título animado -->
+  <div class="animated-title">WARRIOR ALEX</div>
+
+  <!-- Sprites -->
+  <div class="section">
+    <div class="section-title">Sprites</div>
+    <img src="https://share.google/images/IJz28IVmZxAAeXb14" alt="Sprite Warrior Alex" class="asset-img">
+    <a href="https://share.google/images/IJz28IVmZxAAeXb14" class="download-btn">Descargar Sprite</a>
+  </div>
+
+  <!-- Fondos -->
+  <div class="section">
+    <div class="section-title">Fondos</div>
+    <img src="URL_DEL_BACKGROUND" alt="Fondo Cyberpunk" class="asset-img">
+    <a href="URL_DE_DESCARGA_BACKGROUND" class="download-btn">Descargar Fondo</a>
+  </div>
+
+  <!-- Tiles -->
+  <div class="section">
+    <div class="section-title">Tiles / Suelos</div>
+    <img src="URL_DEL_TILE" alt="Tile Warrior Alex" class="asset-img">
+    <a href="URL_DE_DESCARGA_TILE" class="download-btn">Descargar Tile</a>
+  </div>
+
+  <!-- Spritesheets -->
+  <div class="section">
+    <div class="section-title">Spritesheets</div>
+    <img src="URL_DEL_SPRITESHEET" alt="Spritesheet" class="asset-img">
+    <a href="URL_DE_DESCARGA_SPRITESHEET" class="download-btn">Descargar Spritesheet</a>
+  </div>
+
+  <!-- Música Libre -->
+  <div class="section">
+    <div class="section-title">Música Libre</div>
+    <img src="URL_PORTADA_MUSICA" alt="Portada Música" class="asset-img">
+    <audio controls>
+      <source src="URL_PREVIEW_MUSICA" type="audio/mpeg">
+      Tu navegador no soporta el reproductor de audio.
+    </audio>
+    <a href="URL_DE_DESCARGA_MUSICA" class="download-btn">Descargar Música</a>
+  </div>
+
+  <!-- Reproductor personalizado de Rauw Alejandro -->
+  <div class="music-player">
+    <h2>🎧 Álbum completo de Rauw Alejandro</h2>
+    <iframe src="https://archive.org/embed/rauw-alejandro" allow="autoplay"></iframe>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    © 2025 Warrior Alex | Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.querySelectorAll('.download-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Descarga iniciada con estilo Warrior Alex');
+      });
+    });
+  </script>
+
+</body>
+</html>
